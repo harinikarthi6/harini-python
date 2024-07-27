@@ -4,7 +4,7 @@ if sample == '1':
     allfile = os.listdir()
     while True:
         print([x for x in allfile if x.endswith('.txt')])
-        fname=input('enter file name')
+        fname=input('enter file name:')
         if fname in allfile:
             print('file already exists')
         else:
@@ -17,7 +17,7 @@ elif sample == '2':
     allfile = os.listdir()
     while True:
     	print([x for x in allfile if x.endswith('.txt')])
-        fname=input('enter file name')
+        fname=input('enter file name:')
         if fname in allfile:
             file = open(fname,'r')
             print(file.read())
@@ -28,11 +28,11 @@ elif sample =='3':
     allfile = os.listdir()
     while True:
         print([x for x in allfile if x.endswith('.txt')])
-        fname=input('enter file name')
+        fname=input('enter file name:')
         if fname in allfile:
             print('file already exists')
-            data=input('enter data to write')
-            fil=open(fname,'w')
+            data=input('enter data to write:')
+            file=open(fname,'w')
             file.write(data)
             file.close()
             break
